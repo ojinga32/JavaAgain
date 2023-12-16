@@ -49,9 +49,8 @@ public class FileStudy1 {
 		= (path, attribute) -> String.valueOf(path).contains(".java");
 		
 		Files.find(currentDirectory, 1, javaMatacher).forEach(System.out::println);;
-		/*
-
-		*/
+		
+		Files.write(Paths.get(".\\src\\File"), "replaced 될 예정".getBytes());
 	}
 
 }
